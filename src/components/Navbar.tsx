@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-midnight border-b border-midnight-muted">
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         <Link href="/" className="flex items-center">
-          <Image src="/logo.png" alt="Quorbit" width={140} height={40} className="h-10 w-auto" priority />
+          <Image src="/light-logo.png" alt="Quorbit" width={140} height={40} className="h-10 w-auto" priority />
         </Link>
 
         {/* Desktop nav */}
