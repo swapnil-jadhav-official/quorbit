@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Quorbit — Digital Marketing That Performs",
+  title: "Quorbit — Business Simplified",
   description:
-    "Quorbit is a performance-driven digital marketing agency. We manage paid media, SEO, e-commerce growth, and marketing automation for ambitious brands.",
+    "A futuristic marketing agency that blends creativity, AI, automation, and strategic growth into one connected orbit.",
 };
 
 export default function RootLayout({
@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="min-h-full flex flex-col font-sans antialiased">
+    <html lang="en" className={`${archivo.variable} h-full`}>
+      <body className="min-h-full flex flex-col antialiased bg-midnight text-ice">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

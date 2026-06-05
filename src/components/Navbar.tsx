@@ -16,7 +16,7 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-midnight border-b border-midnight-muted">
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         <Link href="/" className="flex items-center">
           <Image src="/logo.png" alt="Quorbit" width={140} height={40} className="h-10 w-auto" priority />
@@ -24,9 +24,9 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          <div className="relative group">
+          <div className="relative">
             <button
-              className="text-sm font-medium text-gray-600 hover:text-gray-950 flex items-center gap-1 transition-colors"
+              className="text-sm font-medium text-ice-muted hover:text-ice flex items-center gap-1 transition-colors"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
@@ -37,7 +37,7 @@ export default function Navbar() {
             </button>
             {servicesOpen && (
               <div
-                className="absolute top-full left-0 mt-1 w-64 bg-white border border-gray-100 rounded-xl shadow-lg py-2"
+                className="absolute top-full left-0 mt-2 w-64 bg-midnight-light border border-midnight-muted rounded-xl shadow-2xl py-2"
                 onMouseEnter={() => setServicesOpen(true)}
                 onMouseLeave={() => setServicesOpen(false)}
               >
@@ -45,7 +45,7 @@ export default function Navbar() {
                   <Link
                     key={s.href}
                     href={s.href}
-                    className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-950 transition-colors"
+                    className="block px-4 py-2.5 text-sm text-ice-muted hover:text-ice hover:bg-midnight-muted transition-colors"
                   >
                     {s.label}
                   </Link>
@@ -53,23 +53,23 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link href="/contact" className="text-sm font-medium text-gray-600 hover:text-gray-950 transition-colors">
+          <Link href="/contact" className="text-sm font-medium text-ice-muted hover:text-ice transition-colors">
             Contact
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-1.5 bg-gray-950 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center gap-1.5 bg-yellow text-midnight text-sm font-bold px-4 py-2 rounded-lg hover:bg-yellow-dark transition-colors"
           >
             Schedule a Call
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
             </svg>
           </Link>
         </div>
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-gray-600 hover:text-gray-950"
+          className="md:hidden p-2 text-ice-muted hover:text-ice"
           onClick={() => setOpen(!open)}
         >
           {open ? (
@@ -86,22 +86,22 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-1">
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Services</p>
+        <div className="md:hidden border-t border-midnight-muted bg-midnight-light px-6 py-4 space-y-1">
+          <p className="text-xs font-semibold text-ice-muted uppercase tracking-wider mb-2">Services</p>
           {services.map((s) => (
             <Link
               key={s.href}
               href={s.href}
-              className="block py-2 text-sm text-gray-700 hover:text-gray-950"
+              className="block py-2 text-sm text-ice-muted hover:text-ice"
               onClick={() => setOpen(false)}
             >
               {s.label}
             </Link>
           ))}
-          <div className="pt-3 border-t border-gray-100 mt-3">
+          <div className="pt-3 border-t border-midnight-muted mt-3">
             <Link
               href="/contact"
-              className="block w-full text-center bg-gray-950 text-white text-sm font-medium px-4 py-2.5 rounded-lg"
+              className="block w-full text-center bg-yellow text-midnight text-sm font-bold px-4 py-2.5 rounded-lg"
               onClick={() => setOpen(false)}
             >
               Schedule a Call
