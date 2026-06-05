@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "A futuristic marketing agency that blends creativity, AI, automation, and strategic growth into one connected orbit.",
   icons: {
     icon: [
-      { url: "/logo.png", type: "image/png" },
+      { url: "/light-logo.png", type: "image/png" },
     ],
     apple: "/icon-192.png",
   },
