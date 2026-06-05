@@ -11,26 +11,28 @@
   --color-yellow-dark: #e0b000;
   --color-green: #62FF00;
   --color-champagne: #F9F1C8;
+}
 
-  /* Typography */
-  --font-heading: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body: var(--font-archivo), Arial, sans-serif;
+/* Override Tailwind's default sans font with Archivo (Next.js sets --font-archivo on <html>) */
+@theme {
   --font-sans: var(--font-archivo), Arial, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  /* Ensure Archivo is applied at the root level */
+  font-family: var(--font-archivo), Arial, sans-serif;
 }
 
 body {
   background-color: #14141A;
   color: #F5F6FC;
-  font-family: var(--font-body);
+  font-family: var(--font-archivo), Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.02em;
 }

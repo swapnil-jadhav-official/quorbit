@@ -37,7 +37,7 @@ export default function ContactPage() {
             Free Strategy Call
           </span>
           <h1 className="text-4xl font-bold tracking-tight mb-4 text-ice"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             Let&apos;s Talk Growth
           </h1>
           <p className="text-ice-muted text-lg leading-relaxed">
@@ -159,7 +159,7 @@ export default function ContactPage() {
             <button
               type="submit"
               className="w-full bg-yellow text-midnight font-bold py-3.5 rounded-lg hover:bg-yellow-dark transition-colors text-sm"
-              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}
+             
             >
               Submit &amp; Schedule My Call
             </button>

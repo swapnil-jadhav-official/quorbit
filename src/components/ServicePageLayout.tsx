@@ -64,7 +64,7 @@ export default function ServicePageLayout({
             {badge}
           </span>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight leading-tight mb-6 text-ice"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             {headline}
           </h1>
           <p className="text-lg sm:text-xl text-ice-muted max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -101,7 +101,7 @@ export default function ServicePageLayout({
       <section className="py-20 px-6 bg-midnight">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-black text-ice mb-12"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             What&apos;s Included
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -113,7 +113,7 @@ export default function ServicePageLayout({
                 <div className="relative">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="w-2 h-2 rounded-full bg-yellow flex-shrink-0 mt-1.5" />
-                    <h3 className="font-bold text-ice" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+                    <h3 className="font-bold text-ice">
                       {item.title}
                     </h3>
                   </div>
@@ -129,7 +129,7 @@ export default function ServicePageLayout({
       <section className="py-20 px-6 bg-midnight-light">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-black text-ice mb-12"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             How We Work
           </h2>
           <div className="space-y-0">
@@ -137,7 +137,7 @@ export default function ServicePageLayout({
               <div key={step.title} className="flex gap-6 pb-8">
                 <div className="flex flex-col items-center">
                   <div className="flex-shrink-0 w-10 h-10 bg-yellow text-midnight rounded-full flex items-center justify-center text-sm font-black"
-                    style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+                   >
                     {i + 1}
                   </div>
                   {i < process.length - 1 && (
@@ -145,7 +145,7 @@ export default function ServicePageLayout({
                   )}
                 </div>
                 <div className="pb-2 pt-1.5">
-                  <h3 className="font-bold text-ice mb-1.5" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+                  <h3 className="font-bold text-ice mb-1.5">
                     {step.title}
                   </h3>
                   <p className="text-sm text-ice-muted leading-relaxed">{step.body}</p>
@@ -160,7 +160,7 @@ export default function ServicePageLayout({
       <section className="py-20 px-6 bg-midnight">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-black text-ice mb-8"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             Who This Is Built For
           </h2>
           <ul className="space-y-3">
@@ -180,7 +180,7 @@ export default function ServicePageLayout({
       <section className="py-20 px-6 bg-midnight-light">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-black text-ice mb-10"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             The Numbers We&apos;re Accountable To
           </h2>
           <div className="border border-midnight-muted rounded-2xl overflow-hidden divide-y divide-midnight-muted">
@@ -203,13 +203,13 @@ export default function ServicePageLayout({
       <section className="py-20 px-6 bg-midnight">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-black text-ice mb-10"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             Frequently Asked Questions
           </h2>
           <div className="space-y-0 divide-y divide-midnight-muted">
             {faqs.map((faq) => (
               <div key={faq.question} className="py-6">
-                <h3 className="font-bold text-ice mb-2" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+                <h3 className="font-bold text-ice mb-2">
                   {faq.question}
                 </h3>
                 <p className="text-sm text-ice-muted leading-relaxed">{faq.answer}</p>
@@ -225,7 +225,7 @@ export default function ServicePageLayout({
           style={{ background: "radial-gradient(ellipse at center, #FFC919 0%, transparent 65%)" }} />
         <div className="relative max-w-2xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-black text-ice mb-5 leading-tight"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             {ctaHeadline}
           </h2>
           <p className="text-ice-muted text-lg mb-10 leading-relaxed">{ctaBody}</p>

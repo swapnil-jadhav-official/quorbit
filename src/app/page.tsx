@@ -90,7 +90,7 @@ export default function Home() {
               AI-Powered Digital Marketing
             </span>
             <h1 className="text-[3.2rem] sm:text-[3.8rem] font-black tracking-tight leading-[1.04] mb-6 text-ice"
-              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+             >
               Meet your<br />
               <span className="text-yellow">growth orbit.</span>
             </h1>
@@ -138,7 +138,7 @@ export default function Home() {
                   ].map((kpi) => (
                     <div key={kpi.label} className="bg-midnight rounded-xl p-3 border border-midnight-muted">
                       <p className="text-xs text-ice-muted mb-1">{kpi.label}</p>
-                      <p className="text-xl font-bold text-ice" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>{kpi.value}</p>
+                      <p className="text-xl font-bold text-ice">{kpi.value}</p>
                       <p className="text-xs font-semibold text-green mt-0.5">{kpi.change}</p>
                     </div>
                   ))}
@@ -201,7 +201,7 @@ export default function Home() {
       <section className="py-28 px-6 bg-midnight">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-4xl sm:text-5xl font-black text-ice leading-tight mb-6"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             Most marketing fails not because of bad products —{" "}
             <span className="text-yellow">because of bad coordination.</span>
           </p>
@@ -228,7 +228,7 @@ export default function Home() {
             <div className="py-16 px-10 lg:px-14 flex flex-col justify-center">
               <span className="text-xs font-semibold uppercase tracking-widest text-yellow mb-4 block">Data-Driven Execution</span>
               <h2 className="text-3xl font-black text-ice mb-5 leading-tight"
-                style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+               >
                 Every channel. Every dollar. Every outcome — tracked.
               </h2>
               <p className="text-ice-muted leading-relaxed mb-6">
@@ -254,7 +254,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-px bg-midnight-muted rounded-2xl overflow-hidden">
           {stats.map((s) => (
             <div key={s.label} className="bg-midnight px-8 py-10 flex flex-col">
-              <p className="text-4xl font-black text-yellow mb-2" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+              <p className="text-4xl font-black text-yellow mb-2">
                 {s.number}
               </p>
               <p className="text-sm font-semibold text-ice">{s.label}</p>
@@ -271,7 +271,7 @@ export default function Home() {
             <div>
               <span className="text-xs font-semibold uppercase tracking-widest text-yellow mb-3 block">Services</span>
               <h2 className="text-3xl font-black text-ice"
-                style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+               >
                 The full orbit.
               </h2>
             </div>
@@ -299,7 +299,7 @@ export default function Home() {
                     <span className="text-xs font-semibold uppercase tracking-widest text-ice-muted/50">{svc.badge}</span>
                   </div>
                   <h3 className="text-lg font-bold text-ice mb-3 group-hover:text-yellow transition-colors"
-                    style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+                   >
                     {svc.title}
                   </h3>
                   <p className="text-sm text-ice-muted leading-relaxed mb-5">{svc.body}</p>
@@ -323,7 +323,7 @@ export default function Home() {
             <div className="py-16 px-0 lg:pr-14 flex flex-col justify-center">
               <span className="text-xs font-semibold uppercase tracking-widest text-yellow mb-4 block">AI + Automation</span>
               <h2 className="text-3xl font-black text-ice mb-5 leading-tight"
-                style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+               >
                 Faster than any team working alone. Smarter than any tool working alone.
               </h2>
               <p className="text-ice-muted leading-relaxed mb-6">
@@ -337,7 +337,7 @@ export default function Home() {
                   { title: "Workflow automation", sub: "Zapier · HubSpot · Make" },
                 ].map((item) => (
                   <div key={item.title} className="bg-midnight-light border border-midnight-muted rounded-xl p-4">
-                    <p className="text-sm font-bold text-ice mb-0.5" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>{item.title}</p>
+                    <p className="text-sm font-bold text-ice mb-0.5">{item.title}</p>
                     <p className="text-xs text-ice-muted">{item.sub}</p>
                   </div>
                 ))}
@@ -363,7 +363,7 @@ export default function Home() {
           <div className="mb-12">
             <span className="text-xs font-semibold uppercase tracking-widest text-yellow mb-3 block">Client Results</span>
             <h2 className="text-3xl font-black text-ice"
-              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+             >
               Results we&apos;re accountable to.
             </h2>
           </div>
@@ -395,7 +395,7 @@ export default function Home() {
             <div className="absolute inset-0 rounded-2xl border border-midnight-muted" />
             <div className="absolute bottom-0 left-0 right-0 p-6"
               style={{ background: "linear-gradient(to top, rgba(20,20,26,0.95) 0%, transparent 100%)" }}>
-              <p className="text-sm font-bold text-yellow" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+              <p className="text-sm font-bold text-yellow">
                 Senior-led. Outcome-focused.
               </p>
               <p className="text-xs text-ice-muted mt-1">Strategists who&apos;ve operated at CMO level</p>
@@ -404,7 +404,7 @@ export default function Home() {
           <div>
             <span className="text-xs font-semibold uppercase tracking-widest text-yellow mb-4 block">Why Quorbit</span>
             <h2 className="text-3xl font-black text-ice mb-8 leading-tight"
-              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+             >
               We don&apos;t hide behind activity metrics.
             </h2>
             <div className="space-y-5">
@@ -417,7 +417,7 @@ export default function Home() {
                 <div key={item.title} className="flex gap-4">
                   <span className="w-1.5 h-1.5 rounded-full bg-yellow flex-shrink-0 mt-2" />
                   <div>
-                    <p className="font-bold text-ice text-sm mb-1" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>{item.title}</p>
+                    <p className="font-bold text-ice text-sm mb-1">{item.title}</p>
                     <p className="text-sm text-ice-muted leading-relaxed">{item.body}</p>
                   </div>
                 </div>
@@ -434,7 +434,7 @@ export default function Home() {
         <div className="relative max-w-2xl mx-auto text-center">
           <span className="text-xs font-semibold uppercase tracking-widest text-yellow mb-4 block">Get Started</span>
           <h2 className="text-4xl sm:text-5xl font-black text-ice mb-5 leading-tight"
-            style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
+           >
             Ready to enter orbit?
           </h2>
           <p className="text-ice-muted text-lg mb-10 leading-relaxed">

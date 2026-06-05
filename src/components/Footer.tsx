@@ -33,7 +33,7 @@ export default function Footer() {
           {/* Services */}
           <div>
             <p className="text-xs font-bold text-ice uppercase tracking-widest mb-5"
-              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>Services</p>
+             >Services</p>
             <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s.href}>
@@ -48,7 +48,7 @@ export default function Footer() {
           {/* CTA */}
           <div>
             <p className="text-xs font-bold text-ice uppercase tracking-widest mb-5"
-              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>Get in Touch</p>
+             >Get in Touch</p>
             <p className="text-sm text-ice-muted mb-5 leading-relaxed">
               Ready to grow? Schedule a free strategy call. Come with your goals — we come prepared.
             </p>
