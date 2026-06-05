@@ -98,6 +98,7 @@ export default function PerformanceMarketingPage() {
           answer: "Weekly performance summaries and monthly deep-dive reports. You'll also have access to a live dashboard with real-time campaign data.",
         },
       ]}
+      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&q=80"
       ctaHeadline="Ready to Make Your Ad Spend Work?"
       ctaBody="Schedule a free 30-minute strategy call. Come with your current setup, your goals, and your questions. We'll come with an honest read on where you are and a clear path to where you want to be."
       ctaBottom="No commitment required. No long-deck sales pitch. Just a direct conversation about your business."

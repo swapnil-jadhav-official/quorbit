@@ -98,6 +98,7 @@ export default function EcommercePage() {
           answer: "Shopping ads are one piece. This service connects your platform performance, your product catalog, your creative, and your paid media into a unified growth system. The sum is significantly more effective than any individual part.",
         },
       ]}
+      heroImage="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80"
       ctaHeadline="Let's Build Your Revenue Machine."
       ctaBody="Schedule a free strategy call. Bring your current store, your numbers, and your goals. We'll come prepared with an honest assessment of where your biggest revenue opportunities are."
       ctaBottom="No contracts to sign on the call. No commitments. Just clarity on what's possible."

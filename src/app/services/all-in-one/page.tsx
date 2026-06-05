@@ -94,6 +94,7 @@ export default function AllInOnePage() {
           answer: "We can work around existing relationships. We'll identify what's in place, assess performance, and integrate or complement where it makes sense. We're not territorial — we care about results.",
         },
       ]}
+      heroImage="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1400&q=80"
       ctaHeadline="One Call. One Strategy. One Partner."
       ctaBody="Tell us where you are and where you want to go. We'll map out what a coordinated, channel-unified marketing program looks like for your specific business — and what it would take to get there."
       ctaBottom="30 minutes. No sales pressure. A direct conversation with someone who's done this before."

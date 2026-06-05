@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const services = [
   { label: "Performance Marketing", href: "/services/performance-marketing" },
@@ -14,27 +15,26 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <span className="relative flex items-center justify-center w-8 h-8">
-                <svg viewBox="0 0 32 32" fill="none" className="w-8 h-8">
-                  <circle cx="16" cy="16" r="13" stroke="#FFC919" strokeWidth="2.5" strokeDasharray="60 20" strokeLinecap="round"/>
-                  <circle cx="16" cy="16" r="3" fill="#FFC919"/>
-                </svg>
-              </span>
-              <span className="text-lg font-bold text-ice" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>
-                Quorbit
-              </span>
-            </div>
-            <p className="text-sm leading-relaxed text-ice-muted max-w-xs mb-4">
-              A futuristic marketing agency blending creativity, AI, automation, and strategic growth into one connected orbit.
+            <Link href="/" className="inline-block mb-5">
+              <Image
+                src="/logo.png"
+                alt="Quorbit"
+                width={130}
+                height={40}
+                className="h-10 w-auto brightness-0 invert"
+              />
+            </Link>
+            <p className="text-sm leading-relaxed text-ice-muted max-w-xs mb-5">
+              A futuristic marketing agency blending AI, automation, creativity, and strategic growth into one connected orbit.
             </p>
-            <span className="text-xs font-semibold text-yellow tracking-widest uppercase">Business Simplified</span>
+            <span className="text-xs font-bold text-yellow tracking-widest uppercase">Business Simplified</span>
           </div>
 
           {/* Services */}
           <div>
-            <p className="text-sm font-bold text-ice mb-4" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>Services</p>
-            <ul className="space-y-2.5">
+            <p className="text-xs font-bold text-ice uppercase tracking-widest mb-5"
+              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>Services</p>
+            <ul className="space-y-3">
               {services.map((s) => (
                 <li key={s.href}>
                   <Link href={s.href} className="text-sm text-ice-muted hover:text-yellow transition-colors">
@@ -47,7 +47,8 @@ export default function Footer() {
 
           {/* CTA */}
           <div>
-            <p className="text-sm font-bold text-ice mb-4" style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>Get in Touch</p>
+            <p className="text-xs font-bold text-ice uppercase tracking-widest mb-5"
+              style={{ fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif" }}>Get in Touch</p>
             <p className="text-sm text-ice-muted mb-5 leading-relaxed">
               Ready to grow? Schedule a free strategy call. Come with your goals — we come prepared.
             </p>

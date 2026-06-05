@@ -98,6 +98,7 @@ export default function WebsiteAutomationPage() {
           answer: "Absolutely. The three services are available independently. That said, the commercial impact is significantly higher when all three are connected — and we'll explain why during the strategy call.",
         },
       ]}
+      heroImage="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=80"
       ctaHeadline="Let's Build the System Your Business Deserves."
       ctaBody="Schedule a free strategy call. Walk us through your current setup, your sales process, and where you're feeling the friction. We'll come back with a clear picture of what needs to be built and in what order."
       ctaBottom="30 minutes. No commitment. We'll tell you exactly what we'd recommend — and why."
