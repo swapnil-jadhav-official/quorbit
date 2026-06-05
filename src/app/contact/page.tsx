@@ -28,19 +28,15 @@ export default function ContactPage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-midnight pt-20 pb-24 px-6">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full opacity-10 blur-3xl"
-          style={{ background: "radial-gradient(ellipse, #FFC919 0%, transparent 70%)" }} />
-        <div className="relative max-w-2xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-yellow border border-yellow/30 rounded-full px-3 py-1 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-yellow inline-block" />
-            Free Strategy Call
-          </span>
-          <h1 className="text-4xl font-bold tracking-tight mb-4 text-ice"
-           >
+      <section className="bg-midnight pt-24 pb-20 px-6 border-b border-midnight-muted"
+        style={{ backgroundImage: "radial-gradient(circle, rgba(255,201,25,0.05) 1px, transparent 1px)", backgroundSize: "32px 32px" }}>
+        <div className="max-w-3xl mx-auto">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-yellow block mb-6">Free Strategy Call</span>
+          <div className="w-12 h-0.5 bg-yellow mb-7" />
+          <h1 className="text-5xl sm:text-6xl font-black tracking-tight leading-[1.05] text-ice mb-5">
             Let&apos;s Talk Growth
           </h1>
-          <p className="text-ice-muted text-lg leading-relaxed">
+          <p className="text-ice-muted text-lg leading-relaxed max-w-xl">
             30 minutes. No commitment. No long-deck sales pitch. Just a direct conversation with someone who&apos;s done this before.
           </p>
         </div>
