@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import HeroHeadline from "@/components/HeroHeadline";
+import StatCounter from "@/components/StatCounter";
 
 const stats = [
   { number: "3×", label: "Average revenue lift", sub: "in 6 months" },
@@ -94,26 +96,7 @@ export default function Home() {
             backgroundSize: "32px 32px",
           }}
         >
-          {/* Headline block — centered */}
-          <div className="flex-1 flex flex-col items-center justify-center text-center py-12">
-            <div className="w-16 h-px bg-yellow mb-8" />
-            <h1 className="text-[clamp(2.8rem,7vw,6.5rem)] font-black text-ice leading-[1.04] tracking-tight max-w-4xl mb-6">
-              Marketing that<br />
-              <span className="text-yellow">orbits your growth.</span>
-            </h1>
-            <p className="text-lg text-ice-muted max-w-lg leading-relaxed mb-10">
-              A futuristic marketing agency blending AI, automation, and strategic execution into one connected orbit.
-            </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-yellow text-midnight font-bold px-7 py-3.5 text-sm uppercase tracking-widest hover:bg-yellow-dark transition-colors"
-            >
-              Start a Project
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
+          <HeroHeadline />
 
           {/* Bottom row */}
           <div className="flex items-center justify-between border-t border-midnight-muted pt-6">
@@ -147,13 +130,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto border border-midnight-muted">
             <div className="grid grid-cols-2 md:grid-cols-4 divide-y divide-midnight-muted md:divide-y-0 md:divide-x divide-midnight-muted">
               {stats.map((s) => (
-                <div key={s.label} className="px-5 py-8 sm:px-8 sm:py-10 flex flex-col gap-1.5">
-                  <span className="text-4xl sm:text-5xl lg:text-6xl font-black text-yellow leading-none tracking-tight">
-                    {s.number}
-                  </span>
-                  <span className="text-xs font-semibold text-ice leading-snug mt-1">{s.label}</span>
-                  <span className="text-xs text-ice-muted">{s.sub}</span>
-                </div>
+                <StatCounter key={s.label} number={s.number} label={s.label} sub={s.sub} />
               ))}
             </div>
           </div>
