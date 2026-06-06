@@ -143,17 +143,19 @@ export default function Home() {
         </div>
 
         {/* ── STATS ── */}
-        <section className="bg-midnight py-24 px-6">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 divide-x divide-midnight-muted border border-midnight-muted">
-            {stats.map((s) => (
-              <div key={s.label} className="px-8 py-10 flex flex-col gap-2">
-                <span className="text-[3.5rem] sm:text-[4.5rem] font-black text-yellow leading-none tracking-tight">
-                  {s.number}
-                </span>
-                <span className="text-xs font-semibold text-ice leading-snug">{s.label}</span>
-                <span className="text-xs text-ice-muted">{s.sub}</span>
-              </div>
-            ))}
+        <section className="bg-midnight py-16 px-6">
+          <div className="max-w-6xl mx-auto border border-midnight-muted">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-y divide-midnight-muted md:divide-y-0 md:divide-x divide-midnight-muted">
+              {stats.map((s) => (
+                <div key={s.label} className="px-5 py-8 sm:px-8 sm:py-10 flex flex-col gap-1.5">
+                  <span className="text-4xl sm:text-5xl lg:text-6xl font-black text-yellow leading-none tracking-tight">
+                    {s.number}
+                  </span>
+                  <span className="text-xs font-semibold text-ice leading-snug mt-1">{s.label}</span>
+                  <span className="text-xs text-ice-muted">{s.sub}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
